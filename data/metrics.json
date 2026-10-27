@@ -1,0 +1,63 @@
+{
+ "rows": {
+  "train": 7260,
+  "test": 1815,
+  "malicious": 1075,
+  "benign": 8000
+ },
+ "test": {
+  "model": {
+   "precision": 0.9906,
+   "recall": 0.9814,
+   "f1": 0.986
+  },
+  "rules": {
+   "precision": 0.3191,
+   "recall": 0.907,
+   "f1": 0.4722
+  },
+  "confusion": [
+   [
+    1598,
+    2
+   ],
+   [
+    4,
+    211
+   ]
+  ]
+ },
+ "hard_negatives": {
+  "n": 40,
+  "model_false_positives": 4,
+  "rules_false_positives": 32,
+  "model_flagged": [
+   "Select a size: S, M or L",
+   "Order by phone or online",
+   "Table tennis -- singles or doubles?",
+   "AND gate vs OR gate truth table"
+  ]
+ },
+ "unseen_families": {
+  "Generic_TimeBased": {
+   "n": 104,
+   "model_recall": 1.0,
+   "rules_recall": 0.9615
+  },
+  "FUZZDB_Oracle": {
+   "n": 53,
+   "model_recall": 1.0,
+   "rules_recall": 1.0
+  },
+  "Auth_Bypass2": {
+   "n": 113,
+   "model_recall": 1.0,
+   "rules_recall": 0.9735
+  },
+  "payloads-sql-blind-MySQL-ORDER_BY": {
+   "n": 18,
+   "model_recall": 1.0,
+   "rules_recall": 1.0
+  }
+ }
+}
